@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation extension</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            margin: 0% auto;
+            margin-top: 100px;
+            border: tomato solid 2px;
+            background-color: yellow;
+            animation-name: example;
+            animation-duration: 4s;
+            position: relative;
+            -o-animation-iteration-count: 3;
+
+            
+        }
+      h6{
+            text-align: center;
+        }
+        @keyframes example {
+           0%{
+               background-color:yellow;
+               left: 0px;
+               right: 20px;
+
+          
+           }
+           25%{
+               background-color: tomato;
+               left: 30px;
+               right: 10px;
+               top: 20px;
+           }
+           50%{
+               background-color: violet;
+           }
+           100%{
+               background-color: black;
+           }
+        }
+        div:hover{
+         transition: width 4s;
+            transform: scale(1.5);
+            background-position: right;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h6>I LOVE BANGLADESH</h6>
+    </div>
+    
+</body>
+</html>
